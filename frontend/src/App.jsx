@@ -1,15 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Login from "./pages/login.jsx";
+import Login from "./pages/Login.jsx";
 import CitizenDashboard from "./pages/citizen/CitizenDashboard";
 import AuthorityDashboard from "./pages/authority/AuthorityDashboard.jsx";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 // Citizen Pages
-import Reports from "./pages/citizen/Reports";
 import Notifications from "./pages/citizen/Notifications";
 import Public from "./pages/citizen/Public";
+import ReportIssue from "./pages/citizen/ReportIssue";
+import MyReports from "./pages/citizen/MyReports";
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
             </ProtectedRoute>
           }
         >
-          <Route path="reports" element={<Reports />} />
+          <Route index element={<ReportIssue />} />
+          <Route path="my-reports" element={<MyReports />} />
           <Route path="notifications" element={<Notifications />} />
           <Route path="public" element={<Public />} />
         </Route>
