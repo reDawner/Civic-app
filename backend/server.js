@@ -6,7 +6,7 @@ import notificationRoutes from "./routes/notificationRoutes.js";
 import path from "path";
 import adminRoutes from "./routes/adminRoutes.js";
 
-mongoose.connect("mongodb+srv://civicuser:civicpass123@cluster0.au1tsdf.mongodb.net/?appName=Cluster0")
+mongoose.connect("mongodb://civicuser:civicpass123@ac-aurjbkp-shard-00-00.au1tsdf.mongodb.net:27017,ac-aurjbkp-shard-00-01.au1tsdf.mongodb.net:27017,ac-aurjbkp-shard-00-02.au1tsdf.mongodb.net:27017/?ssl=true&replicaSet=atlas-glwluq-shard-0&authSource=admin&appName=Cluster0")
     .then(() => console.log("MongoDB connected"))
     .catch(err => console.log(err));
 

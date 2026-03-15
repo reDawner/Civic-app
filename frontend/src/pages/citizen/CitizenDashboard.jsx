@@ -67,8 +67,7 @@ function CitizenDashboard() {
                                 >
                                     {item.label}
                                     {item.id === "notifications" && (
-                                        <span className="ml-1 align-top -mt-0.5 inline-block bg-red-500 text-white text-[0.6rem] font-bold px-1.5 py-px rounded-full">
-                                            3
+                                        <span className="ml-1 align-top -mt-0.5 inline-block text-white text-[0.6rem] font-bold px-1.5 py-px rounded-full">
                                         </span>
                                     )}
                                 </button>
